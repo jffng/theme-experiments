@@ -82,3 +82,8 @@ function colorful_theme_blocks_scripts() {
 	wp_enqueue_style( 'colorful-theme-blocks-styles', get_stylesheet_uri(), array(), $theme_version );
 }
 add_action( 'wp_enqueue_scripts', 'colorful_theme_blocks_scripts' );
+
+/**
+ * Require Gutenberg.
+ */
+require get_template_directory() . '/classes/require-gutenberg.php';
